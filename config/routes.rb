@@ -4,4 +4,5 @@ Raffler::Application.routes.draw do
   end
 
   root to: "main#index"
+  match '*path', to: 'main#index'
 end
